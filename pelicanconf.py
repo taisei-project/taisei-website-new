@@ -39,12 +39,12 @@ AUTHOR_FEED_RSS = None
 TAISEI_VERSION = '1.3.1'
 
 NAVBAR = (
-    ('Home', 'home', '/', ''),
-    ('News', 'news', '/news', ''),
-    ('Media', 'media', '/media', ''),
-    ('Download', 'download', '/download', TAISEI_VERSION),
+    ('Home', 'home', SITEURL + '/', ''),
+    ('News', 'news', SITEURL + '/news', ''),
+    ('Media', 'media', SITEURL + '/media', ''),
+    ('Download', 'download', SITEURL + '/download', TAISEI_VERSION),
     ('GitHub', 'github', 'https://github.com/taisei-project/taisei', ''),
-    ('Play In Browser', 'play', '/play', 'Beta'),
+    ('Play In Browser', 'play', SITEURL + '/play', 'Beta'),
 )
 
 # Blogroll
@@ -62,4 +62,4 @@ PLUGINS = [
 ]
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = False

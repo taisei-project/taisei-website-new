@@ -10,11 +10,10 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://taisei-project.org'
+SITEURL = '/taisei-website-new'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_ALL_ATOM = 'atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
@@ -22,10 +21,3 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
-
-# Blogroll
-LINKS = (('GitHub', 'https://github.com/taisei-project/taisei'),
-         ('GameManual', 'https://github.com/taisei-project/taisei/blob/master/doc/GAME.rst'))
-
-# Social widget
-SOCIAL = (('Discord', 'https://discord.gg/JEHCMzW'))

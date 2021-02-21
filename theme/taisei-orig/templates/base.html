@@ -9,13 +9,12 @@
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     </head>
     <body class="background">
-        <div id="head"></div>
-
-        <div id="nav"><div>
+        <div id="head"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/banner.png" /></div>
+        <div id="nav">
             {% for caption, id, href, subtext in NAVBAR %}
-            <a{% if id == active_page %} class="this-page"{% endif %} href="{{ href|e }}">{{ caption | e}}{% if subtext %} <span class="subtext">({{ subtext }})</span>{% endif %}</a>
+            <a{% if id == active_page %} class="this-page"{% endif %} href="{% if 'http' not in href %}{{ SITEURL }}{% endif %}{{ href|e }}">{{ caption | e}}{% if subtext %} <span class="subtext">({{ subtext }})</span>{% endif %}</a>
             {% endfor %}
-        </div></div>
+        </div>
 
         <div id="content">
             {% block content %}{% endblock content %}
