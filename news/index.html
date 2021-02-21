@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News — Taisei Project</title>
+        <link rel="alternate" type="application/atom+xml" title="News" href="/news.atom" />
+        <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" href="/theme/images/favicon.ico" />
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <body class="background">
+        <div id="head"></div>
+
+        <div id="nav"><div>
+            <a href="/">Home</a>
+            <a class="this-page" href="/news">News</a>
+            <a href="/media">Media</a>
+            <a href="/download">Download <span class="subtext">(1.3.1)</span></a>
+            <a href="https://github.com/taisei-project/taisei">GitHub</a>
+            <a href="/play">Play In Browser <span class="subtext">(Beta)</span></a>
+        </div></div>
+
+        <div id="content">
+            <a href="/news.atom" class="feed">News Feed</a>
+            <h1>News</h1>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2019/09/taisei-v131-released.html">Taisei v1.3.1 Released!</a></span>
+                <span class="a_date">2019-09-29 22:30:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>Hey, we are back for a little replay-compatible update to the 1.3 release. The changes include:</p>
+<ul>
+<li><p class="first"><strong>Improved laser rendering and other visual improvements</strong>. The spell card opener looks yet a bit cooler, there are little indicators for off-screen items.</p>
+</li>
+<li><p class="first"><strong>Player Spell Cards</strong> now have proper names and declaration animations.</p>
+</li>
+<li><p class="first"><strong>Optimizations</strong> in various shaders that will make your toaster a bit happier about running Taisei. However, as usual, it is best if your toaster has good OpenGL drivers to avoid most trouble.</p>
+</li>
+<li><p class="first">The audio assets are now in <strong>Opus</strong> format, which reduces file size at increased fidelity. On that note, the file sizes in general have been reduced, which benefits the loading time of the web version of Taisei.</p>
+</li>
+<li><p class="first">Quite a few <strong>bug fixes</strong>. Of particular importance, two potentially game-breaking bugs have been vanquished:</p>
+<blockquote>
+<ul class="simple">
+<li>In Cirno's very first spell “Perfect Freeze”, the player could (extremely rarely) get killed for no apparent reason. This was caused by a bug in bullet motion interpolation.</li>
+<li>In some builds, MarisaA's lasers would render enemies permanently invulnerable, making them ineffective weapons to put it lightly.</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p>But we actually have a big ace up our bullet riddled sleeves as well:</p>
+<ul class="simple">
+<li>Complete replacement of the <strong>character artwork</strong> by <a class="reference external" href="https://twitter.com/afensorm">&#64;afensorm</a>.</li>
+</ul>
+<p>They are cute, they are colorful and if you look carefully, some parts glow a bit. We also have some variable facial expressions incoming, but those will be part of version 1.4.</p>
+<p>We are happy to also announce the new Switch homebrew port by <a class="reference external" href="https://twitter.com/p__sam">&#64;p-sam</a>. Now you can clear <em>Tower of Truth “Theory of Everything”</em> on public transport and impress your fellow passenger!</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2019/04/taisei-v13-released.html">Taisei v1.3 Released!</a></span>
+                <span class="a_date">2019-04-27 12:00:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>After quite some time we are back with another release! The list of changes is a bit more subtle than in the last releases.</p>
+<p>The short story of it is that with deep-reaching engine optimizations we were able to get better performance… which we used</p>
+<p>to make the game look significantly better in many places. You can now enjoy high resolution graphics and about an infinite amount of particles spraying around.</p>
+<p>The new graphics backend is maybe almost too flexible. Akari was able to whip up an (emscripten-powered) browser version of Taisei in a bunch of days.</p>
+<p>This is still experimental, but you can try to <a class="reference external" href="https://taisei-project.org/play">play it on the web</a> now like it’s really 2019!</p>
+<p>But of course we also have some gameplay changes for you!</p>
+<p>Here is a very coarse list of notable changes:</p>
+<ul class="simple">
+<li><strong>Greatly improved Graphics</strong>. Name one thing you knew in Taisei and chances are, it looks much better now compared to v1.2. In case we made your intel laptop blush (or get a fever), find the new quality settings in the options.</li>
+<li><strong>Reimu</strong> is now finally investigating this incident. Fans will be able to use her traditional homing shot and blasting orb bomb. Moreover, her second shot will have you bend space to reach all the places elusive to the regular household shots. But let’s face the real reason she’s in the game: Developer favoritism.</li>
+<li><strong>Scoring System</strong>s are a staple in danmaku games and now Taisei too has a nontrivial mechanic that transforms the way you route your stages. You can activate <em>Power Surges</em> that reward you in points and resources which makes this feature fun for both skilled scorers and the average Yōkai. The spells formerly known as <em>Extra Spells</em> are now <em>Voltage Overdrives</em> and are unlocked using the surges.</li>
+<li><strong>New MarisaB</strong>. Marisa always had a rather slow second shotmode which got replaced by her new <em>Stellar Vortex</em>. This is still an inverted focus, but releases a whole storm of bullets that will flush those fairies off the screen.</li>
+<li><strong>Music Room</strong>. Unlock and listen to every piece of our <a class="reference external" href="https://tuckv.bandcamp.com/album/taisei-project-ost">cool soundtrack</a>. There are two bonus tracks that are unlocked under special circumstances. Can you find them?</li>
+<li><strong>Bombs</strong> are now more unique and require different strategies to maximize their damage.</li>
+<li><strong>Modified Collision Formulas</strong>. Oh well we had some bugs in the old ones and never realized… :'))) But this change is probably less noticeable to most players.</li>
+<li><strong>Pattern changes</strong>. We did not touch the bullets much, but in a few select places we improved patterns slightly.</li>
+</ul>
+<p>As always it is difficult to put over a year of development in such a short list especially since most of the work this time was behind the scenes. In lines of code we had around 57000 insertions and 20000 deletions since v1.2 which is quite the magnitude for a small project like ours. It's a little sad that we don't get to brag about all the internal engine changes in excruciating detail, but such is life … ;)</p>
+<p>Special Thanks this time go to Akari whose hard work and creativity made 95% of this release. We would also like to thank our testers which were more than essential in the making of the scoring system and performance testing on all kinds of different hardware. Thanks to the all people who contributed over the last year, those who left the team and those who joined. And last but not least to you there following the Taisei news after all this time.</p>
+<p>Now head to the <a class="reference external" href="https://taisei-project.org/download">Download</a> section and have fun with the game while we start planning the next release! If you find any issues (or are generally interested) join our <a class="reference external" href="https://discord.gg/JEHCMzW">Discord server</a> or <a class="reference external" href="irc://irc.freenode.net:6667/taisei-project">IRC channel</a>.</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2018/01/taisei-v12-released.html">Taisei v1.2 Released!</a></span>
+                <span class="a_date">2018-01-27 17:10:00+01:00</span>
+            </div>
+            <div class="a_content">
+                <p>A hearty welcome to all those watching our website with bated breaths, for today marks a grand milestone in the annals of Taisei Project. Although perhaps not apparent to the public eye, the team has expanded significantly over the course of several months to include a composer, a writer, an artist, and several dedicated playtesters. Thus, while the developers have still been busy upgrading and tweaking gameplay, the addition of these new members has allowed for new improvements that they would have been unable to create on their own.</p>
+<p>Notable changes include:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://tuckv.bandcamp.com/album/taisei-project-ost">An original soundtrack</a> for every completed stage and boss fight in the game, as well as for the menu, ending, and credits screens. This was done entirely by <a class="reference external" href="https://www.youtube.com/channel/UCaw73cuHLnFCSpjOtt_9pyg">Tuck V</a>, a Western ZUN-style composer.</li>
+<li><strong>All-new sound effects</strong> for bullets and shot types, which in tandem with the music greatly reduce the silence in the game. They also reflect which bullet type aligns with them, resulting in the necessary warning system people have come to expect from shmups. Most of these are by <a class="reference external" href="https://vnutriya.bandcamp.com/">InsideI</a>, a Ukrainian indie composer.</li>
+<li><strong>Redone story, dialogue, and ending texts</strong> by Lalasa a.k.a. <a class="reference external" href="https://www.reddit.com/user/lyricana">Lyricana</a>, written with Touhou canon in mind and in the style of early Touhou games. Now Marisa's and Youmu's stories differ greatly from each other, offering different facets to the game's story and a reward for playing both.</li>
+<li><strong>Revamped shots, now with completely distinct playstyles</strong>. They are also updated graphically, and include new bombs and special effects. The shots may now even be considered flashier than most main series Touhou games, and offer unique ways to play the game.</li>
+<li><strong>Every enemy and boss sprite is now fully animated</strong>. Enjoy fun poses during different spell cards as each character shows more personality during the fight!</li>
+<li><strong>Numerous spell cards and patterns have been updated, or even outright redesigned</strong>. Some are also completely new. Taisei as an overall game is now a brand new experience that may be unrecognizable to some. The changes also extend to other parts of the game, such as an updated HUD, more Practice options, and significantly upgraded gamepad support.</li>
+<li><strong>Various bugs have been discovered and squished</strong> thanks to continuous playtesting on multiple systems. Wriggle and Scuttle are fine, however, and the latter now sports a fresh appearance as well.</li>
+</ul>
+<p>This list is by no means exhaustive, as many smaller and/or more technical changes have been implemented over time as well.</p>
+<p>Of course, our development has not stopped here, and we have already have bold plans for the upcoming version 1.3!</p>
+<p>If you like what you see from our expanded development team here at Taisei Project, remember that there's nothing stopping you from joining in and making this game even better. It could be as simple as playing the game and <a class="reference external" href="https://github.com/taisei-project/taisei/issues">reporting any issues</a>, or showcasing it to the public on social media. We still need help, and you don't need to be an expert in anything to be part of our game as long as you enjoy it as much as we do. That's why we highly encourage joining our <a class="reference external" href="https://discord.gg/JEHCMzW">Discord server</a> or <a class="reference external" href="irc://irc.freenode.net:6667/taisei-project">IRC channel</a>, where you can freely talk to the developers and other contributors.</p>
+<p>Thank you for being interested in our hard work!</p>
+<p>Now off to the <a class="reference external" href="https://taisei-project.org/download">Download</a> section you go.</p>
+<p><strong>If you maintain a Taisei package, read</strong><a class="reference external" href="https://github.com/taisei-project/taisei/releases/tag/v1.2">this notice</a><strong>.</strong></p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2017/11/taisei-v112-released.html">Taisei v1.1.2 Released!</a></span>
+                <span class="a_date">2017-11-20 07:27:00+01:00</span>
+            </div>
+            <div class="a_content">
+                <p>This is a maintenance release of the stable v1.1 branch. It doesn't have any gameplay changes, and consists entirely of bugfixes and improvements backported from the v1.2 development tree.</p>
+</p><p>Replays recorded with v1.1 and v1.1.1 should be fully compatible with this version, and vice versa.</p>
+</p><p>Some of the notable changes are:</p>
+</p><ul>
+<li><div class="first"></p></div><p>Fixed sound not working with SDL_mixer 2.0.2 due to incorrect initialization</p>
+<p>order.</p>
+</p></li>
+<li><div class="first"></p></div><p>Made all audio resources optional. Taisei will no longer abort when trying to</p>
+<p>load music or a sound effect when the audio subsystem has failed to initialize</p>
+<p>or was disabled at build time.</p>
+</p></li>
+<li><div class="first"></p></div><p>Fixed various issues related to fullscreen and window management.</p>
+</p></li>
+<li><div class="first"></p></div><p>Implemented a more robust way to choose an appropriate SDL video driver. The</p>
+<p><tt class="docutils literal">TAISEI_VIDEO_DRIVER</tt> environment variable is now deprecated. See</p>
+<p><a class="reference external" href="https://github.com/taisei-project/taisei/blob/v1.1.2/ENVIRON.md#video-and-opengl">here</a></p>
+<p>for details.</p>
+</p></li>
+<li><div class="first"></p></div><p>On Windows systems with hybrid graphics (typically laptops), Taisei will now</p>
+<p>attempt to use the more powerful discrete GPU by default.</p>
+</p></li>
+<li><div class="first"></p></div><p>Fixed a linking error that occured for dynamically linked Windows builds. The</p>
+<p>official releases for Windows are still statically linked, however.</p>
+</p></li>
+</ul>
+</p><p>Go grab it from the <a class="reference external" href="https://taisei-project.org/download">Download</a> section.</p>
+</p>
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2017/10/taisei-v111-released.html">Taisei v1.1.1 Released!</a></span>
+                <span class="a_date">2017-10-28 00:40:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>This is a maintenance release of the stable v1.1 branch. It doesn't have any gameplay changes, and consists entirely of bugfixes and improvements backported from the v1.2 development tree.</p>
+<p>Replays recorded with v1.1 should be fully compatible with this version, and vice versa.</p>
+<p>Some of the notable changes are:</p>
+<ul class="simple">
+<li>Vertical synchronization (vsync) is now disabled by default, as it causes
+percieved input latency for some players. If you'd like to use it and/or you
+have screen tearing problems, you should set it to &quot;on&quot; or &quot;adaptive&quot; in the
+video settings.</li>
+<li>The event/input processing system has been completely rewritten, and unicode
+text input now works correctly.</li>
+<li>Reimplemented the framerate limiter. It's significantly more accurate now and
+attempts to compensate for sudden frametime spikes. This makes the game much
+more likely to run at exactly the intended speed (60 frames per second).</li>
+<li>The character's Power is now also displayed as a numeric value, in addition to
+the stars bar.</li>
+<li>Fixed an unpleasant artifact in the boss background shader.</li>
+<li>Fixed the &quot;letterboxing&quot; artifacts on some systems on non-4:3 resolutions.</li>
+<li><dl class="first docutils">
+<dt>Updated the SDL game controller database. More gamepads are supported</dt>
+<dd>out-of-the-box now.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Fixed the character getting stuck moving in some direction when using some</dt>
+<dd>gamepads in the &quot;restricted&quot; axes mode.</dd>
+</dl>
+</li>
+<li>Fixed memory corruption that could occur when a gamepad has less axes than
+expected of an Xbox-like controller.</li>
+<li>Fixed various build issues for Windows and macOS targets.</li>
+<li>Updated the SDL version to 2.0.7 in the official Windows and macOS builds.</li>
+</ul>
+<p>Go grab it from the <a class="reference external" href="https://taisei-project.org/download">Download</a> section.</p>
+<p>As you can see, we are alive and well! v1.2 is under active development, with some pleasant surprises already present in the master branch <em>(SPOILERS:</em> <em>WE HAVE MUSIC)</em>.</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2017/09/taisei-v11-released.html">Taisei v1.1 Released!</a></span>
+                <span class="a_date">2017-09-25 12:00:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>A few weeks later <em>cough</em> we finally are ready to present the new version 1.1.</p>
+<p>Roughly five years ago we had our first release and since then, we did a lot to polish the lose ends and finish where we left off.</p>
+<p>The list of changes is very long, but here are some highlights:</p>
+<div class="section" id="graphics">
+<h2>Graphics</h2>
+<ul class="simple">
+<li>Most stages got new, improved backgrounds</li>
+<li>Many nice shader effects making everything look a bit more beautiful</li>
+<li>A full set of character dialog graphics</li>
+<li>Arbitrary resolution support!</li>
+<li>Variable render quality to make taisei run smoothly on your toaster, too</li>
+</ul>
+</div>
+<div class="section" id="gameplay">
+<h2>Gameplay</h2>
+<ul class="simple">
+<li>Complete rebalance: Less unfair deaths, easy is now much more doable for average people</li>
+<li>Extra spells: Clear all spells of a boss and you get to try a fancy new extra spell with unique mechanics for each boss</li>
+<li>Spell practice</li>
+<li>New shotmodes</li>
+<li>Better gamepad support</li>
+<li>Fully portable Replays</li>
+</ul>
+</div>
+<div class="section" id="resources">
+<h2>Resources</h2>
+<ul class="simple">
+<li>Faster loading times due to asynchronous preloading</li>
+<li>BGM support: Still lacking a soundtrack, the code is now there so you can use your own music while playing taisei.</li>
+<li>File system abstraction: Technically you can make your own set of
+graphics, place it in a local directory and it overwrites the
+standard ones. So you can make your very own Taisei reskin about
+international politics or sentient fruit.</li>
+</ul>
+<p>Have fun playing and let us know if you find any bugs!</p>
+</div>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2017/04/restarting-development.html">Restarting Development</a></span>
+                <span class="a_date">2017-04-05 16:00:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>I have good news for everybody interested in this project! In the past few months we somehow spent a lot of time on this game and did a great many steps toward version 1.1!</p>
+<p>Among the improvements we have</p>
+<ul class="simple">
+<li>A complete rebalance of the game making Easy modo more casual as well as</li>
+<li>Lunatic less unfair.</li>
+<li>Many graphical improvements (Stage backgrounds, Dialog graphics, FX)</li>
+<li>Challenging Extra Spells you can unlock for every boss.</li>
+</ul>
+<p>You might also want to checkout the new <a class="reference external" href="https://taisei-project.org/news.atom">Atom feed</a> for these news articles.</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2014/01/new-page.html">New page</a></span>
+                <span class="a_date">2014-01-13 08:30:00+01:00</span>
+            </div>
+            <div class="a_content">
+                <p>I had to rewrite this page using python flask so it supports uwsgi properly.</p>
+<p>Sorry for the downtime.</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2012/08/version-10a.html">Version 1.0a</a></span>
+                <span class="a_date">2012-08-10 16:49:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>After some first release fail, here is version 1.0a. The windows builds follow soon, first the 64bit version, then 32bit later today.</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2012/08/release-time.html">Release Time!</a></span>
+                <span class="a_date">2012-08-09 20:18:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>Today, after a week full of careful (<em>cough</em>) testing, we are ready to announce the first stable version of Taisei.</p>
+<p>It was quite a long way and there is still quite some stuff to do, but I hope with this release Taisei will become known to a greater audience for the first time.</p>
+<p>So just be sure you enjoy playing… and consider joining us on IRC!</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2012/08/on-the-way-to-release.html">On the way to Release</a></span>
+                <span class="a_date">2012-08-06 18:53:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>After some weeks of full power programming, Taisei's content was finished. The first release should be ready soon. Super unexpected!</p>
+
+            </div>
+            <div class="a_header">
+                <span class="a_title"><a href="/news/2011/10/a-website-for-taisei.html">A Website for Taisei</a></span>
+                <span class="a_date">2011-10-16 21:36:00+02:00</span>
+            </div>
+            <div class="a_content">
+                <p>Spontaneous project this weekend: Making a website for the project. But soon i had to realize that something like a &quot;good CMS&quot; for my purposes does not exist. So I ended up programming my own using Go and its http capabilities. I call it &quot;GO Obviously Dreadful CMS&quot; or in short GoodCMS.</p>
+<p>I generally focussed on something minimalistic and highly extensible. At the moment I have about 300 SLOC for everything here. It just reads some ini-style config data and fills the Macros in my little boilerplate file with the content from my content files, but for me it is exactly what I needed.</p>
+<p>I hope this page will be a place for people to get a first impression of the project. Screenshots and poorly drawn media are to follow.</p>
+
+            </div>
+        </div>
+    </body>
+</html>
