@@ -25,11 +25,15 @@ a:visited {
 }
 
 #head {
-    height: 165px;
-    background: #16a;
-    background: url(/theme/images/banner.png) #002222;
-    background-position:center;
-    background-repeat: no-repeat;
+	background: #002222;
+}
+
+#head img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 12%;
+	padding: 1em;
 }
 
 #nav {
