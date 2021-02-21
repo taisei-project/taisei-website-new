@@ -34,22 +34,35 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# displayname, pagename, path, subscript
+PLUGIN_PATHS = ['pelican-plugins']
 
+# change this when a new version is released
 TAISEI_VERSION = '1.3.1'
+
+TAISEI_GIT = 'https://github.com/taisei-project/taisei'
+TAISEI_RELEASE_URL = '{0}/releases/download/v{1}/Taisei-{1}-'.format(TAISEI_GIT, TAISEI_VERSION)
+
+RELEASE_LINKS = {
+    'windows-x64-setup': ('setup-x86_64.exe', '64-bit (installer)'),
+    'windows-x86-setup': ('setup-x86.exe', '32-bit (installer)'),
+    'windows-x64-zip': ('windows-x86_64.zip', '64-bit (zip)'),
+    'windows-x86-zip': ('windows-x86.zip', '32-bit (zip)'),
+    'macos': ('macOS-x86_64.dmg', '64-bit (macOS 10.7 or later required)'),
+    'linux': ('linux-x86_64.tar.xz', '64-bit (glibc 2.24 or later)'),
+    'switch': ('switch-aarch64.zip', '(Homebrew)'),
+}
 
 NAVBAR = (
     ('Home', 'home', SITEURL + '/', ''),
     ('News', 'news', SITEURL + '/news', ''),
     ('Media', 'media', SITEURL + '/media', ''),
+    ('GitHub', 'github', TAISEI_GIT, ''),
     ('Download', 'download', SITEURL + '/download', TAISEI_VERSION),
-    ('GitHub', 'github', 'https://github.com/taisei-project/taisei', ''),
     ('Play In Browser', 'play', SITEURL + '/play', 'Beta'),
 )
 
 # Blogroll
-LINKS = (
-         ('GameManual', 'https://github.com/taisei-project/taisei/blob/master/doc/GAME.rst'))
+LINKS = (('GameManual', TAISEI_GIT + '/blob/master/doc/GAME.rst'),)
 
 # Social widget
 SOCIAL = (('Discord', 'https://discord.gg/JEHCMzW'))
@@ -59,6 +72,7 @@ DEFAULT_PAGINATION = 5
 PLUGINS = [
     "jinja2content",
     "pelican_youtube",
+    "release_links",
 ]
 
 # Uncomment following line if you want document-relative URLs when developing

@@ -1,4 +1,4 @@
-{% extends "main.html" %}
+{% extends "base.html" %}
 {% block title %}Download{% endblock %}
 
 {% macro begin_collapsible(id, label) %}
@@ -40,9 +40,21 @@
 {{ end_collapsible() }}
 {% endmacro %}
 
-{% macro release_url_prefix() %}https://github.com/taisei-project/taisei/releases/download/v{{ latest_version() }}{% endmacro %}
+{% macro release_url_prefix() %}test{% endmacro %}
+
+{% macro release_url(binary_name) %}
+{{ TAISEI_RELEASE_URL }}{{ binary_name }}
+{% endmacro %}
+
 
 {% block content %}
+{{ page.content }}
+
+{% for contexts in context %}
+{{ context }}
+print
+{% endfor %}
+{#
             <h1>Download</h1>
             <p>
                 We provide pre-built packages for <a href="#windows">Windows</a>, <a href="#macos">macOS</a>, and some <a href="#linux">Linux</a> distributions.
@@ -56,12 +68,12 @@
             <h2 id="windows">Windows</h2>
             <h3>Stable</h3>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-setup-x86_64.exe">v{{ latest_version() }} 64-bit (installer)</a></li>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-setup-x86.exe">v{{ latest_version() }} 32-bit (installer)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-setup-x86_64.exe">v{{ TAISEI_VERSION }} 64-bit (installer)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-setup-x86.exe">v{{ TAISEI_VERSION }} 32-bit (installer)</a></li>
             </ul>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-windows-x86_64.zip">v{{ latest_version() }} 64-bit (zip)</a></li>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-windows-x86.zip">v{{ latest_version() }} 32-bit (zip)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-windows-x86_64.zip">v{{ TAISEI_VERSION }} 64-bit (zip)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-windows-x86.zip">v{{ TAISEI_VERSION }} 32-bit (zip)</a></li>
             </ul>
             <p>If in doubt, try the 64-bit installer first.</p>
 
@@ -100,7 +112,7 @@
             <p>An <a href="https://www.flathub.org/apps/details/org.taisei_project.Taisei">unofficial package</a> is available on Flathub.</p>
             <h3>Static build</h3>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-linux-x86_64.tar.xz">v{{ latest_version() }} x86-64 (glibc 2.24 or later)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-linux-x86_64.tar.xz">v{{ TAISEI_VERSION }} x86-64 (glibc 2.24 or later)</a></li>
             </ul>
             <p>
                 This is a relocatable, (mostly) statically-linked build that should work on most glibc-based Linux distributions without installation.
@@ -111,14 +123,14 @@
 
             <h2 id="macos">macOS</h2>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-macOS-x86_64.dmg">v{{ latest_version() }} 64-bit (macOS 10.7 or later required)</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-macOS-x86_64.dmg">v{{ TAISEI_VERSION }} 64-bit (macOS 10.7 or later required)</a></li>
             </ul>
 
             <hr />
 
             <h2 id="switch">Switch Homebrew</h2>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/Taisei-{{ latest_version() }}-switch-aarch64.zip">v{{ latest_version() }}</a></li>
+                <li><a href="{{ release_url_prefix() }}/Taisei-{{ TAISEI_VERSION }}-switch-aarch64.zip">v{{ TAISEI_VERSION }}</a></li>
             </ul>
             <p>
                 This is a semi-official port for the Switch console. You can also <a href="https://www.switchbru.com/appstore/#/app/Taisei">get it on the Homebrew Appstore</a>.<br/>
@@ -140,10 +152,11 @@
             </p>
             <h3>Stable</h3>
             <ul>
-                <li><a href="{{ release_url_prefix() }}/taisei-v{{ latest_version() }}.tar.xz">v{{ latest_version() }}</a></li>
+                <li><a href="{{ release_url_prefix() }}/taisei-v{{ TAISEI_VERSION }}.tar.xz">v{{ TAISEI_VERSION }}</a></li>
             </ul>
             <h3>Unstable</h3>
             <div class="codeblock">
                 git clone --recurse-submodules -j8 <a href="https://github.com/taisei-project/taisei">https://github.com/taisei-project/taisei</a>
             </div>
+#}
 {% endblock %}

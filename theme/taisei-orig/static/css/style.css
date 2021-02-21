@@ -2,6 +2,7 @@ body {
     margin: 0px auto;
     color: #ccc;
     background: #222;
+	font-family: Verdana;
 }
 
 .background {
@@ -68,6 +69,7 @@ a:visited {
 
 a.this-page {
     background: #033;
+	border-radius: 5px;
 }
 
 #nav .subtext {
@@ -307,7 +309,7 @@ hr {
 }
 
 li {
-	margin-left: 2em;
+	margin-left: 1em;
 }
 
 dd {
