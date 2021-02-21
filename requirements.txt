@@ -1,0 +1,5 @@
+pelican
+markdown
+ghp-import
+shovel
+pelican-jinja2content
