@@ -20,38 +20,41 @@ If you have never played Tōhō before, you can have a look at our `manual <http
 
 The game is mostly done and very playable, so feel free to give it a try!
 
-.. raw:: html
+.. container:: splitter
 
-        <div class="splitter">
-            <div class="splitter-pane">
-                <div class="splitter-pane-header"><h2>Contact us</h2></div>
-                <div class="splitter-pane-content">
-                You can:
-                <ul>
-                    <li>Visit <a href="irc://irc.freenode.net:6667/taisei-project">#taisei-project</a> on Freenode.</li>
-                    <li>Join our <a href="https://github.com/taisei-project/taisei/blob/master/doc/GAME.rst">Discord</a> server.</li>
-                    <li>Create an issue on <a href="https://github.com/taisei-project/taisei">GitHub</a><br/>(You don’t have to be a developer to do this).</li>
-                    <li>Write us a mail.
-                        <ul>
-                            <li><kbd>Akari &lt;akari[at]taisei-project.org&gt;</kbd></li>
-                            <li><kbd>Laochailan &lt;laochailan[at]web.de&gt;</kbd></li>
-                            <li><kbd>Alice D. &lt;alice[at]starwitch.productions&gt;</kbd></li>
-                        </ul>
-                    </li>
-                    <li>Support us on <a href="https://liberapay.com/Taisei">Liberapay</a> or <a href="https://patreon.com/taisei_project">Patreon</a>.</li>
-                </ul>
-                </div>
-            </div>
+    .. container:: splitter-pane
 
-            <div class="splitter-pane">
-                <div class="splitter-pane-header"><h2>Gameplay demo</h2></div>
-                <div class="splitter-pane-content"><p>
-                    <div class='embed-container'>
-                        <iframe width="1600" height="1200" src="https://www.youtube-nocookie.com/embed/exI-OhuHOGw?vq=hd1080&modestbranding=1&rel=0" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+        .. container:: splitter-pane-header
 
-    </embed>
+            Contact Us
+
+        .. class:: splitter-pane-content
+
+            You can:
+
+            - Visit `#taisei-project <irc://irc.freenode.net:6667/taisei-project>`__ on Freenode.
+            - Join our `Discord <https://discord.gg/JEHCMzW>`__ server.
+            - Create an issue on `GitHub <https://github.com/taisei-project/taisei>`__. (You don't have to be a developer to do this!)
+            - Write us an email:
+                - Akari <akari[at]taisei-project.org>
+                - Laochailan <laochailan[at]web.de>
+                - Alice D. <alice[at]starwitch.productions>
+
+            You can also support us on:
+
+            - `Liberapay <https://liberapay.com/Taisei>`__
+            - `Patreon <https://patreon.com/taisei_project>`__
+
+    .. container:: splitter-pane
+
+        .. container:: splitter-pane-header
+
+            Gameplay Demo
+
+        .. container:: splitter-pane-content
+
+            .. youtube:: exI-OhuHOGw
+               :class: youtube-4x3
+               :allowfullscreen: no
+               :nocookie: yes
 

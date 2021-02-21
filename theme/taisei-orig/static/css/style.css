@@ -252,6 +252,32 @@ hr {
     text-decoration: underline;
 }
 
+.youtube-4x3 {
+	padding-bottom: 75%;  /* inverse of 4:3 aspect ratio */
+}
+
+.youtube-16x9 {
+	padding-bottom: 56.25%;  /* inverse of 16:9 aspect ratio */
+}
+
+.youtube-4x3,
+.youtube-16x9 {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+}
+
+.youtube-4x3 iframe,
+.youtube-16x9 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 0;
+}
+
 .splitter {
     display: table;
     width: 100%;
@@ -262,10 +288,26 @@ hr {
     width: 50%;
 }
 
+.splitter-pane-header {
+	display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
 .splitter-pane-content {
     padding: 0 0.5em;
 }
 
 li {
-    margin-block-end: 0.25em;
+	margin-left: 2em;
+}
+
+dd {
+	font-family: 'Courier New', monospace;
+	font-size: 13px;
+	margin-left: 0em;
 }
