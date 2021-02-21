@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% set active_page = "news" %}
+{% block title %}News{% endblock %}
+
+{% block content %}
+            <h1>News</h1>
+            <div class="article">
+                <div class="a_header">
+                    <span class="a_title">{{ article.title }}</span>
+                    <span class="a_date">{{ article.date }}</span>
+                </div>
+                <div class="a_content">{{ article.content }}</div>
+            </div>
+{% endblock %}

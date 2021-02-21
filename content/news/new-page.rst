@@ -8,6 +8,3 @@ I had to rewrite this page using python flask so it supports uwsgi properly.
 
 Sorry for the downtime.
 
-.. raw:: html
-
-   </p>

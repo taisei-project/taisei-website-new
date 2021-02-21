@@ -6,6 +6,3 @@ On the way to Release
 
 After some weeks of full power programming, Taisei's content was finished. The first release should be ready soon. Super unexpected!
 
-.. raw:: html
-
-   </p>

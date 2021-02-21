@@ -8,12 +8,5 @@ Today, after a week full of careful (*cough*) testing, we are ready to announce 
 
 It was quite a long way and there is still quite some stuff to do, but I hope with this release Taisei will become known to a greater audience for the first time.
 
-.. raw:: html
-
-   </p>
-
 So just be sure you enjoy playing… and consider joining us on IRC!
 
-.. raw:: html
-
-   </p>
