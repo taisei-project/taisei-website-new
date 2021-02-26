@@ -50,6 +50,7 @@ RELEASE_LINKS = {
     'macos': ('macOS-x86_64.dmg', '64-bit (macOS 10.7 or later required)'),
     'linux': ('linux-x86_64.tar.xz', '64-bit (glibc 2.24 or later)'),
     'switch': ('switch-aarch64.zip', '(Homebrew)'),
+    'source': ('.tar.xz', '')
 }
 
 NAVBAR = (
@@ -73,6 +74,7 @@ PLUGINS = [
     "jinja2content",
     "pelican_youtube",
     "release_links",
+    "collapsing_blocks",
 ]
 
 # Uncomment following line if you want document-relative URLs when developing
