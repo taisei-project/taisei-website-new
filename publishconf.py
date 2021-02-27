@@ -10,10 +10,10 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = '/taisei-website-new'
+SITEURL = 'https://taisei-project.github.io/taisei-website-new'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = SITEURL + '/atom.xml'
+FEED_ALL_ATOM = 'atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
