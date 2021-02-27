@@ -4,10 +4,6 @@ Download
 :url: download/
 :save_as: download/index.html
 :date: 2021-02-20 12:00
-:window-64-install: win64install.exe
-:window-32-install: win64install.exe
-:window-64-zip: win64.zip
-:window-32-zip: win32.zip
 
 .. contents:: Links
 

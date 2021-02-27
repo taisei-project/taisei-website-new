@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% set active_page = "media" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+    <div class="album">
+        {% for al in album.albums|sort(reverse=True, attribute="name") %}
+        <h2 class="screen_caption">{{ al.name.split("_")[1] }}</h2>
+            {% for image in al.images %}
+            {{ image.album }}
+                <a href="{{ SITEURL }}/{{ image.url }}"><img class="screen" src="{{ SITEURL }}/{{ image.thumbnail(page.metadata.get('thumbnail-size')) }}" title="{{ image.filename }}" /></a>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <h2 class="screen_caption">When Taisei was written in C++ and used Clanlib</h2>
+    <p>[Screenshots have passed into fantasy]</p>
+{% endblock %}

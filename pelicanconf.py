@@ -70,11 +70,18 @@ SOCIAL = (('Discord', 'https://discord.gg/JEHCMzW'))
 
 DEFAULT_PAGINATION = 5
 
+ALBUM_PATH = "images/screenshots"
+THUMBNAIL_OUTPUT_PATH = "images/screenshots/thumbnails"
+ALBUM_URL = "media/"
+ALBUM_SAVE_AS = "media/index.html"
+THUMBNAIL_DEFAULT_SIZE = "480x360"
+
 PLUGINS = [
     "jinja2content",
     "pelican_youtube",
     "release_links",
     "collapsing_blocks",
+    "pelican_albums",
 ]
 
 # Uncomment following line if you want document-relative URLs when developing
