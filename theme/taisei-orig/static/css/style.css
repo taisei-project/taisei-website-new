@@ -11,7 +11,7 @@ body {
 
 
 .background {
-    background: url(/theme/images/background.webp) #222;
+    background: url(../images/background.webp) #222;
     background-position: bottom left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -183,7 +183,7 @@ hr {
 .feed {
     margin-left: 3px;
     padding: 0 0 0 19px;
-    background: url("/theme/images/feed-icon-14x14.png") no-repeat 0 50%;
+    background: url("../images/feed-icon-14x14.png") no-repeat 0 50%;
     float: right;
 }
 

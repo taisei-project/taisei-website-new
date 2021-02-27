@@ -4,7 +4,7 @@
 {% block title %}News{% endblock %}
 
 {% block content %}
-            <a href="/news.atom" class="feed">News Feed</a>
+            <a href="{{ SITEURL }}/news.atom" class="feed">News Feed</a>
             <h1>News</h1>
             {% for article in dates %}
             <div class="a_header">

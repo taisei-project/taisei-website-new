@@ -13,7 +13,7 @@ from pelicanconf import *
 SITEURL = 'https://taisei-project.github.io/taisei-website-new'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'atom.xml'
+FEED_ALL_ATOM = 'news.atom'
 
 DELETE_OUTPUT_DIRECTORY = True
 
