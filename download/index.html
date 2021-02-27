@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taisei Project - Download — Taisei Project</title>
+        <link rel="alternate" type="application/atom+xml" title="News" href="/news.atom" />
+        <link href="/taisei-website-new/theme/css/style.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" href="/taisei-website-new/theme/images/favicon.ico" />
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <body class="background">
+        <div id="head"><img src="/taisei-website-new/theme/images/banner.png" /></div>
+        <div id="nav">
+            <a class="this-page" href="/taisei-website-new/">Home</a>
+            <a href="/taisei-website-new/news">News</a>
+            <a href="/taisei-website-new/media">Media</a>
+            <a href="https://github.com/taisei-project/taisei">GitHub</a>
+            <a href="/taisei-website-new/download">Download <span class="subtext">(1.3.1)</span></a>
+            <a href="/taisei-website-new/play">Play In Browser <span class="subtext">(Beta)</span></a>
+        </div>
+
+        <div id="content">
+    <h1>Download</h1>
+    
+
+    <div class="contents topic" id="links">
+<p class="topic-title">Links</p>
+<ul class="simple">
+<li><a class="reference internal" href="#windows" id="id4">Windows</a><ul>
+<li><a class="reference internal" href="#stable" id="id5">Stable</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linux" id="id6">Linux</a><ul>
+<li><a class="reference internal" href="#arch-linux" id="id7">Arch Linux</a></li>
+<li><a class="reference internal" href="#open-build-service" id="id8">Open Build Service</a></li>
+<li><a class="reference internal" href="#flatpack" id="id9">Flatpack</a></li>
+<li><a class="reference internal" href="#static-build" id="id10">Static Build</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#macos" id="id11">macOS</a></li>
+<li><a class="reference internal" href="#switch-homebrew" id="id12">Switch (Homebrew)</a></li>
+<li><a class="reference internal" href="#source-code" id="id13">Source Code</a><ul>
+<li><a class="reference internal" href="#id3" id="id14">Stable</a></li>
+<li><a class="reference internal" href="#unstable" id="id15">Unstable</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>We provide pre-built packages for <a class="reference external" href="#windows">Windows</a>, <a class="reference external" href="#macos">macOS</a>, and some <a class="reference external" href="#linux">Linux</a> distributions.</p>
+<p>You can also download the <a class="reference external" href="#source">source code</a> and build it yourself, or <a class="reference external" href="https://repology.org/metapackage/taisei/versions">look for a package</a> in your distribution's repositories.</p>
+<p>If you're looking for PGP signatures, SHA256 sums, or older releases, visit the <a class="reference external" href="https://github.com/taisei-project/taisei/releases">releases page on GitHub</a>.</p>
+<p>If you find any mistakes, please contact us.</p>
+<hr class="docutils" />
+<div class="section" id="windows">
+<h2><a class="toc-backref" href="#id4">Windows</a></h2>
+<div class="section" id="stable">
+<h3><a class="toc-backref" href="#id5">Stable</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-setup-x86_64.exe">v1.3.1 64-bit (installer)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-setup-x86.exe">v1.3.1 32-bit (installer)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-windows-x86_64.zip">v1.3.1 64-bit (zip)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-windows-x86.zip">v1.3.1 32-bit (zip)</a></li>
+</ul>
+<p>If in doubt, try the 64-bit installer first.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="linux">
+<h2><a class="toc-backref" href="#id6">Linux</a></h2>
+<div class="section" id="arch-linux">
+<h3><a class="toc-backref" href="#id7">Arch Linux</a></h3>
+<p>There are unofficial <a class="reference external" href="https://aur.archlinux.org/packages/taisei/">taisei</a>
+and <a class="reference external" href="https://aur.archlinux.org/packages/taisei-git/">taisei-git</a>
+PKGBUILDs available on <a class="reference external" href="http://aur.archlinux.org/">AUR</a>.</p>
+</div>
+<div class="section" id="open-build-service">
+<h3><a class="toc-backref" href="#id8">Open Build Service</a></h3>
+<p><a class="reference external" href="https://build.opensuse.org/project/show/home:lachs0r:taisei:stable">Stable</a></p>
+<ul><li><input class="collapsible-toggle" id="stable_Fedora_29" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_29">Fedora 29</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_29/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Tumbleweed" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Tumbleweed">openSUSE Tumbleweed</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Tumbleweed/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.0" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.0">openSUSE Leap 15.0</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.0/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.1" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.1">openSUSE Leap 15.1</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.1/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<p><a class="reference external" href="https://build.opensuse.org/project/show/home:lachs0r:taisei">Development Snapshots</a></p>
+<ul><li><input class="collapsible-toggle" id="dev_Fedora_29" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_29">Fedora 29</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_29/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Tumbleweed" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Tumbleweed">openSUSE Tumbleweed</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Tumbleweed/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.0" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.0">openSUSE Leap 15.0</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.0/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.1" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.1">openSUSE Leap 15.1</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.1/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+</div>
+<div class="section" id="flatpack">
+<h3><a class="toc-backref" href="#id9">Flatpack</a></h3>
+<p>An <a class="reference external" href="https://www.flathub.org/apps/details/org.taisei_project.Taisei">unofficial package</a> is available on Flathub.</p>
+</div>
+<div class="section" id="static-build">
+<h3><a class="toc-backref" href="#id10">Static Build</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-linux-x86_64.tar.xz">v1.3.1 64-bit (glibc 2.24 or later)</a></li>
+</ul>
+<p>This is a relocatable, (mostly) statically-linked build that should work on most glibc-based Linux distributions without installation. If possible, we recommend using your distribution's package or our OBS repos instead of this.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="macos">
+<h2><a class="toc-backref" href="#id11">macOS</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-macOS-x86_64.dmg">v1.3.1 64-bit (macOS 10.7 or later required)</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="switch-homebrew">
+<h2><a class="toc-backref" href="#id12">Switch (Homebrew)</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-switch-aarch64.zip">v1.3.1 (Homebrew)</a></li>
+</ul>
+<p>This is a semi-official port for the Switch console. You can also <a class="reference external" href="https://www.switchbru.com/appstore/#/app/Taisei">get it on the Homebrew Appstore</a>.</p>
+<p><strong>Use at your own risk.</strong> Contact <a class="reference external" href="https://twitter.com/p__sam">&#64;p-sam</a> for support.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="source-code">
+<h2><a class="toc-backref" href="#id13">Source Code</a></h2>
+<p>Building Taisei is easy (unless you are on Windows).</p>
+<p>Download the source code and follow the instructions in <code class="bash">README.md</code>.</p>
+<p>Feel free to contact us if you have problems.</p>
+<p>Although Taisei supports only Linux, macOS, and Windows officially, it's also known to work on BSD systems and Haiku.</p>
+<p>Generally, it should build and run on any POSIX-compliant OS, given that <a class="reference external" href="https://github.com/taisei-project/taisei/#dependencies">all the dependencies</a> also work there.</p>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id14">Stable</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-.tar.xz">v1.3.1 </a></li>
+</ul>
+</div>
+<div class="section" id="unstable">
+<h3><a class="toc-backref" href="#id15">Unstable</a></h3>
+<p class="codeblock">git clone --recurse-submodules -j8 <a class="reference external" href="https://github.com/taisei-project/taisei">https://github.com/taisei-project/taisei</a></p>
+</div>
+</div>
+
+
+        </div>
+    </body>
+</html>
