@@ -13,7 +13,7 @@ from pelicanconf import *
 SITEURL = '/taisei-website-new'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'atom.xml'
+FEED_ALL_ATOM = SITEURL + '/atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
