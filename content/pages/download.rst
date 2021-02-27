@@ -60,7 +60,7 @@ Open Build Service
     :name: {{ distro }}
     :stable: {{ stable }}
 
-    dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei{% if stable %}:/stable{% endif %}/{{ distro|replace(" ", "_") }}/home:lachs0r:taisei{% if stable %}:stable{% endif %}.repo
+    dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei{% if 'yes' in stable %}:/stable{% endif %}/{{ distro|replace(" ", "_") }}/home:lachs0r:taisei{% if 'yes' in stable %}:stable{% endif %}.repo
     dnf install taisei
 
 
@@ -76,7 +76,7 @@ Open Build Service
    :name: {{ distro }}
    :stable: {{ stable }}
 
-    zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei{% if stable %}:/stable{% endif %}/{{ distro|replace(" ", "_") }}/home:lachs0r:taisei{% if stable %}:stable{% endif %}.repo
+    zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei{% if 'yes' in stable %}:/stable{% endif %}/{{ distro|replace(" ", "_") }}/home:lachs0r:taisei{% if 'yes' in stable %}:stable{% endif %}.repo
     zypper in taisei
 
 {% endfor %}
