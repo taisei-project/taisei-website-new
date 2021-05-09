@@ -14,8 +14,14 @@
             <a href="https://taisei-project.github.io/taisei-website-new/news">News</a>
             <a href="https://taisei-project.github.io/taisei-website-new/media">Media</a>
             <a href="https://github.com/taisei-project/taisei">GitHub</a>
-            <a href="https://taisei-project.github.io/taisei-website-new/download">Download <span class="subtext">(1.3.1)</span></a>
-            <a href="https://taisei-project.github.io/taisei-website-new/play">Play In Browser <span class="subtext">(Beta)</span></a>
+            <a href="https://taisei-project.github.io/taisei-website-new/download">Download <span class="subtext">(1.3.2)</span></a>
+            <div class="dropdown">
+                <button class="dropbtn">Play In Browser</button>
+                <div class="dropdown-content">
+                    <p><a href="https://taisei-project.github.io/taisei-website-new/play/stable">Stable <span class="subtext">(1.3.2)</span></a></p>
+                    <p><a href="https://taisei-project.github.io/taisei-website-new/play/unstable">Unstable <span class="subtext">(nightly)</span></a></p>
+                </div>
+            </div>
         </div>
 
         <div id="content">
@@ -55,10 +61,10 @@
 <div class="section" id="stable">
 <h3><a class="toc-backref" href="#id5">Stable</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-setup-x86_64.exe">v1.3.1 64-bit (installer)</a></li>
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-setup-x86.exe">v1.3.1 32-bit (installer)</a></li>
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-windows-x86_64.zip">v1.3.1 64-bit (zip)</a></li>
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-windows-x86.zip">v1.3.1 32-bit (zip)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-setup-x86_64.exe">v1.3.2 64-bit (installer)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-setup-x86.exe">v1.3.2 32-bit (installer)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-windows-x86_64.zip">v1.3.2 64-bit (zip)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-windows-x86.zip">v1.3.2 32-bit (zip)</a></li>
 </ul>
 <p>If in doubt, try the 64-bit installer first.</p>
 </div>
@@ -74,16 +80,23 @@ PKGBUILDs available on <a class="reference external" href="http://aur.archlinux.
 </div>
 <div class="section" id="open-build-service">
 <h3><a class="toc-backref" href="#id8">Open Build Service</a></h3>
+<p>We also provide packages for some distributions at Open Build Service.</p>
 <p><a class="reference external" href="https://build.opensuse.org/project/show/home:lachs0r:taisei:stable">Stable</a></p>
-<ul><li><input class="collapsible-toggle" id="stable_Fedora_29" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_29">Fedora 29</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_29/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_Fedora_31" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_31">Fedora 31</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_31/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_Fedora_32" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_32">Fedora 32</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_32/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_Fedora_33" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_33">Fedora 33</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_33/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_Fedora_Rawhide" type="checkbox"/><label class="collapsible-label" for="stable_Fedora_Rawhide">Fedora Rawhide</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/Fedora_Rawhide/home:lachs0r:taisei:stable.repo<br />dnf install taisei</div></div></li></ul>
 <ul><li><input class="collapsible-toggle" id="stable_openSUSE_Tumbleweed" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Tumbleweed">openSUSE Tumbleweed</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Tumbleweed/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
-<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.0" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.0">openSUSE Leap 15.0</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.0/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
-<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.1" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.1">openSUSE Leap 15.1</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.1/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.2" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.2">openSUSE Leap 15.2</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.2/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="stable_openSUSE_Leap_15.3" type="checkbox"/><label class="collapsible-label" for="stable_openSUSE_Leap_15.3">openSUSE Leap 15.3</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei:/stable/openSUSE_Leap_15.3/home:lachs0r:taisei:stable.repo<br /> zypper in taisei</div></div></li></ul>
 <p><a class="reference external" href="https://build.opensuse.org/project/show/home:lachs0r:taisei">Development Snapshots</a></p>
-<ul><li><input class="collapsible-toggle" id="dev_Fedora_29" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_29">Fedora 29</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei/Fedora_29/home:lachs0r:taisei.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_Fedora_31" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_31">Fedora 31</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei/Fedora_31/home:lachs0r:taisei.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_Fedora_32" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_32">Fedora 32</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei/Fedora_32/home:lachs0r:taisei.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_Fedora_33" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_33">Fedora 33</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei/Fedora_33/home:lachs0r:taisei.repo<br />dnf install taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_Fedora_Rawhide" type="checkbox"/><label class="collapsible-label" for="dev_Fedora_Rawhide">Fedora Rawhide</label><div class="collapsible-content"><div class="codeblock">dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/lachs0r:/taisei/Fedora_Rawhide/home:lachs0r:taisei.repo<br />dnf install taisei</div></div></li></ul>
 <ul><li><input class="collapsible-toggle" id="dev_openSUSE_Tumbleweed" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Tumbleweed">openSUSE Tumbleweed</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei/openSUSE_Tumbleweed/home:lachs0r:taisei.repo<br /> zypper in taisei</div></div></li></ul>
-<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.0" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.0">openSUSE Leap 15.0</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei/openSUSE_Leap_15.0/home:lachs0r:taisei.repo<br /> zypper in taisei</div></div></li></ul>
-<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.1" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.1">openSUSE Leap 15.1</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei/openSUSE_Leap_15.1/home:lachs0r:taisei.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.2" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.2">openSUSE Leap 15.2</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei/openSUSE_Leap_15.2/home:lachs0r:taisei.repo<br /> zypper in taisei</div></div></li></ul>
+<ul><li><input class="collapsible-toggle" id="dev_openSUSE_Leap_15.3" type="checkbox"/><label class="collapsible-label" for="dev_openSUSE_Leap_15.3">openSUSE Leap 15.3</label><div class="collapsible-content"><div class="codeblock"> zypper ar -fr https://download.opensuse.org/repositories/home:/lachs0r:/taisei/openSUSE_Leap_15.3/home:lachs0r:taisei.repo<br /> zypper in taisei</div></div></li></ul>
 </div>
 <div class="section" id="flatpack">
 <h3><a class="toc-backref" href="#id9">Flatpack</a></h3>
@@ -92,7 +105,7 @@ PKGBUILDs available on <a class="reference external" href="http://aur.archlinux.
 <div class="section" id="static-build">
 <h3><a class="toc-backref" href="#id10">Static Build</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-linux-x86_64.tar.xz">v1.3.1 64-bit (glibc 2.24 or later)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-linux-x86_64.tar.xz">v1.3.2 64-bit (glibc 2.27 or later)</a></li>
 </ul>
 <p>This is a relocatable, (mostly) statically-linked build that should work on most glibc-based Linux distributions without installation. If possible, we recommend using your distribution's package or our OBS repos instead of this.</p>
 </div>
@@ -101,14 +114,14 @@ PKGBUILDs available on <a class="reference external" href="http://aur.archlinux.
 <div class="section" id="macos">
 <h2><a class="toc-backref" href="#id11">macOS</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-macOS-x86_64.dmg">v1.3.1 64-bit (macOS 10.7 or later required)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-macOS-aarch64.dmg">v1.3.2 64-bit Apple Silicon (macOS 11.0 or later required)</a></li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="switch-homebrew">
 <h2><a class="toc-backref" href="#id12">Switch (Homebrew)</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-switch-aarch64.zip">v1.3.1 (Homebrew)</a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-switch-aarch64.zip">v1.3.2 (Homebrew)</a></li>
 </ul>
 <p>This is a semi-official port for the Switch console. You can also <a class="reference external" href="https://www.switchbru.com/appstore/#/app/Taisei">get it on the Homebrew Appstore</a>.</p>
 <p><strong>Use at your own risk.</strong> Contact <a class="reference external" href="https://twitter.com/p__sam">&#64;p-sam</a> for support.</p>
@@ -124,7 +137,7 @@ PKGBUILDs available on <a class="reference external" href="http://aur.archlinux.
 <div class="section" id="id3">
 <h3><a class="toc-backref" href="#id14">Stable</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.1/Taisei-1.3.1-.tar.xz">v1.3.1 </a></li>
+<li><a class="reference external" href="https://github.com/taisei-project/taisei/releases/download/v1.3.2/Taisei-1.3.2-.tar.xz">v1.3.2 </a></li>
 </ul>
 </div>
 <div class="section" id="unstable">
