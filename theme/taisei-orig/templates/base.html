@@ -12,7 +12,18 @@
         <div id="head"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/banner.png" /></div>
         <div id="nav">
             {% for caption, id, href, subtext in NAVBAR %}
+            {% if id == 'play' %}
+            <div class="dropdown">
+                <button class="dropbtn">{{ caption | e }}</button>
+                <div class="dropdown-content">
+                    {% for caption, id, phref, subtext in href %}
+                    <p><a href="{% if 'http' not in href %}{{ SITEURL }}{% endif %}{{ phref|e }}">{{ caption | e}}{% if subtext %} <span class="subtext">({{ subtext }})</span>{% endif %}</a></p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
             <a{% if id == active_page %} class="this-page"{% endif %} href="{% if 'http' not in href %}{{ SITEURL }}{% endif %}{{ href|e }}">{{ caption | e}}{% if subtext %} <span class="subtext">({{ subtext }})</span>{% endif %}</a>
+            {% endif %}
             {% endfor %}
         </div>
 

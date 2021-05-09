@@ -50,11 +50,13 @@ PKGBUILDs available on `AUR <http://aur.archlinux.org/>`__.
 Open Build Service
 ''''''''''''''''''
 
+We also provide packages for some distributions at Open Build Service.
+
 {% for title, stable, suffix in [("Stable", "yes", ":stable"), ("Development Snapshots", "no", "")] %}
 
 `{{ title }} <https://build.opensuse.org/project/show/home:lachs0r:taisei{{ suffix }}>`__
 
-{% for distro in ["Fedora 29"] %}
+{% for distro in ["Fedora 31", "Fedora 32", "Fedora 33", "Fedora Rawhide"] %}
 
 .. collapsible::
     :name: {{ distro }}
@@ -68,8 +70,8 @@ Open Build Service
 
 {% for distro in [
     "openSUSE Tumbleweed",
-    "openSUSE Leap 15.0",
-    "openSUSE Leap 15.1",
+    "openSUSE Leap 15.2",
+    "openSUSE Leap 15.3",
 ] %}
 
 .. collapsible::
