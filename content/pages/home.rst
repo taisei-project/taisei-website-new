@@ -40,11 +40,6 @@ The game is mostly done and very playable, so feel free to give it a try!
                 - Laochailan <laochailan[at]web.de>
                 - Alice D. <alice[at]starwitch.productions>
 
-            You can also support us on:
-
-            - `Liberapay <https://liberapay.com/Taisei>`__
-            - `Patreon <https://patreon.com/taisei_project>`__
-
     .. container:: splitter-pane
 
         .. container:: splitter-pane-header
