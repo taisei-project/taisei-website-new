@@ -14,7 +14,7 @@
             {% for caption, id, href, subtext in NAVBAR %}
             {% if id == 'play' %}
             <div class="dropdown">
-                <button class="dropbtn">{{ caption | e }}</button>
+                <button class="dropbtn"><a href="/play" >{{ caption | e }}</a></button>
                 <div class="dropdown-content">
                     {% for caption, id, phref, subtext in href %}
                     <p><a href="{% if 'http' not in href %}{{ SITEURL }}{% endif %}{{ phref|e }}">{{ caption | e}}{% if subtext %} <span class="subtext">({{ subtext }})</span>{% endif %}</a></p>

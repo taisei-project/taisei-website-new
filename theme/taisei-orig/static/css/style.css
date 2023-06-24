@@ -6,7 +6,7 @@ body {
     margin: 0px auto;
     color: #ccc;
     background: #222;
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 
@@ -72,27 +72,32 @@ a.toc-backref {
     width: 40%;
     padding: 0.2em 0.5em;
     transition: background .2s;
+    border-radius: 5px;
 }
 
 #nav .dropbtn {
     font-size: 15pt;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: white;
     padding: 0.2em 0.5em;
     transition: background .2s;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#nav .dropbtn a {
+    padding: 0;
 }
 
 #nav .dropbtn:hover {
     background: #066;
-    border-radius: 5px;
 }
 
 #nav .dropdown {
@@ -112,7 +117,6 @@ a.toc-backref {
 
 #nav .dropdown:hover .dropdown-content {
     display: block;
-    border-radius: 5px;
 }
 
 
@@ -126,16 +130,14 @@ a.toc-backref {
 
 #nav .dropdown-content a:hover {
     background: #088;
-    border-radius: 5px;
 }
 
 #nav a:hover {
-    border-radius: 5px;
     background: #066;
 }
+
 a.this-page {
     background: #033;
-    border-radius: 5px;
 }
 
 #nav .subtext {
