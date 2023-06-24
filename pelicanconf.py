@@ -61,8 +61,8 @@ NAVBAR = (
     ('GitHub', 'github', TAISEI_GIT, ''),
     ('Download', 'download', SITEURL + '/download', TAISEI_VERSION),
     ('Play In Browser', 'play', [
-        ('Stable', 'stable', SITEURL + '/play/stable', TAISEI_VERSION),
-        ('Unstable', 'unstable', SITEURL + '/play/unstable', 'nightly'),
+        ('Stable release', 'stable', SITEURL + '/play', TAISEI_VERSION),
+        ('Development', 'unstable', SITEURL + '/play/unstable', 'master'),
     ], 'Beta'),
 )
 
