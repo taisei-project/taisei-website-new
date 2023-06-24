@@ -1,5 +1,5 @@
-What Is Taisei?
-###############
+What Is Taisei Project?
+#######################
 
 :url: /
 :save_as: index.html
@@ -32,8 +32,7 @@ The game is mostly done and very playable, so feel free to give it a try!
 
             You can:
 
-            - Visit `#taisei-project <irc://irc.freenode.net:6667/taisei-project>`__ on Freenode.
-            - Join our `Discord <https://discord.gg/JEHCMzW>`__ server.
+            - Join our `Discord <discord>`__ server.
             - Create an issue on `GitHub <https://github.com/taisei-project/taisei>`__. (You don't have to be a developer to do this!)
             - Write us an email:
                 - Akari <akari[at]taisei-project.org>
