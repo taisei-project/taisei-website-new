@@ -5,6 +5,10 @@ Download
 :save_as: download/index.html
 :date: 2021-02-20 12:00
 
+.. |rstsucks| raw:: html
+    
+    <!--why do i have to do this fucking retarded bullshit just to separate two god damn lists?!-->
+
 .. contents:: Links
 
 We provide pre-built packages for `Windows <#windows>`__, `macOS <#macos>`__, and some `Linux <#linux>`__ distributions.
@@ -25,6 +29,9 @@ Stable
 
 * `w64s`_
 * `w32s`_
+
+|rstsucks|
+
 * `w64z`_
 * `w32z`_
 
