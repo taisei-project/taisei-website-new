@@ -2,7 +2,7 @@ Taisei v1.4 Preview at DoKomi 2023!
 ###################################
 :date: 2023-06-24 17:00
 :author: Akari
-:slug: taisei-v14-at-dokomi2023
+:slug: 0014_v1.4_dokomi2023
 
 Remember how we said we would post about some large v1.4 updates "soon" or have a beta out 
 "mid-fall"? Well oops, that never happened, but a whole lot of stuff *did* happen that held back 

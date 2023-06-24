@@ -2,7 +2,7 @@ Taisei v1.3.2 Released!
 #######################
 :date: 2021-05-01 10:00
 :author: Taisei team
-:slug: taisei-v132-released
+:slug: 0013_v1.3.2
 
 It's been a long time since the last update, but the project is still alive and well! In fact, we're busy working on some large updates for v1.4, which we will post about soon. Unfortunately, v1.4 isn't quite finished yet, but today we bring you a long overdue maintenance update for the v1.3 branch.
 

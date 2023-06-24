@@ -2,7 +2,7 @@ A Website for Taisei
 ####################
 :date: 2011-10-16 21:36
 :author: Taisei team
-:slug: a-website-for-taisei
+:slug: 0001_new_website
 :tag: news
 
 Spontaneous project this weekend: Making a website for the project. But soon i had to realize that something like a "good CMS" for my purposes does not exist. So I ended up programming my own using Go and its http capabilities. I call it "GO Obviously Dreadful CMS" or in short GoodCMS.

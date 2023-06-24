@@ -2,7 +2,7 @@ Restarting Development
 ######################
 :date: 2017-04-05 16:00
 :author: Taisei team
-:slug: restarting-development
+:slug: 0006_a_new_hope
 
 I have good news for everybody interested in this project! In the past few months we somehow spent a lot of time on this game and did a great many steps toward version 1.1!
 

@@ -2,7 +2,7 @@ Taisei v1.2 Released!
 #####################
 :date: 2018-01-27 17:10
 :author: Taisei team
-:slug: taisei-v12-released
+:slug: 0010_v1.2
 
 A hearty welcome to all those watching our website with bated breaths, for today marks a grand milestone in the annals of Taisei Project. Although perhaps not apparent to the public eye, the team has expanded significantly over the course of several months to include a composer, a writer, an artist, and several dedicated playtesters. Thus, while the developers have still been busy upgrading and tweaking gameplay, the addition of these new members has allowed for new improvements that they would have been unable to create on their own.
 

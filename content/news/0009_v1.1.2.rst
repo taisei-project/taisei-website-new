@@ -2,7 +2,7 @@ Taisei v1.1.2 Released!
 #######################
 :date: 2017-11-20 07:27
 :author: Taisei team
-:slug: taisei-v112-released
+:slug: 0009_v1.1.2
 
 This is a maintenance release of the stable v1.1 branch. It doesn't have any gameplay changes, and consists entirely of bugfixes and improvements backported from the v1.2 development tree.
 

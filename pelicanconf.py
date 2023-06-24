@@ -24,8 +24,8 @@ TAGS_SAVE_AS = ''
 INDEX_SAVE_AS = '' # disabled
 AUTHOR_SAVE_AS = ''
 
-ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = 'news/{slug}'
+ARTICLE_SAVE_AS = 'news/{slug}/index.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

@@ -2,7 +2,7 @@ Release Time!
 #############
 :date: 2012-08-09 20:18
 :author: Taisei team
-:slug: release-time
+:slug: 0003_now_is_the_time
 
 Today, after a week full of careful (*cough*) testing, we are ready to announce the first stable version of Taisei.
 

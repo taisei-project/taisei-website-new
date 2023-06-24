@@ -2,7 +2,7 @@ Taisei v1.3 Released!
 #####################
 :date: 2019-04-27 12:00
 :author: Taisei team
-:slug: taisei-v13-released
+:slug: 0011_v1.3
 
 After quite some time we are back with another release! The list of changes is a bit more subtle than in the last releases.
 
