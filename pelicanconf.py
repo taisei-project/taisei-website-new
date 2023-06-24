@@ -48,7 +48,7 @@ RELEASE_LINKS = {
     'windows-x64-zip': ('windows-x86_64.zip', '64-bit (zip)'),
     'windows-x86-zip': ('windows-x86.zip', '32-bit (zip)'),
     'macos': ('macOS-x86_64.dmg', '64-bit Intel (macOS 10.9 or later required)'),
-    'macos': ('macOS-aarch64.dmg', '64-bit Apple Silicon (macOS 11.0 or later required)'),
+    # 'macos': ('macOS-aarch64.dmg', '64-bit Apple Silicon (macOS 11.0 or later required)'),
     'linux': ('linux-x86_64.tar.xz', '64-bit (glibc 2.27 or later)'),
     'switch': ('switch-aarch64.zip', '(Homebrew)'),
     'source': ('.tar.xz', '')

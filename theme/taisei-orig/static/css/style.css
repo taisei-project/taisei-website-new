@@ -30,6 +30,12 @@ a:visited {
     color: #2C92E7;
 }
 
+a.toc-backref {
+    font-style: normal;
+    text-decoration: none;
+    color: #ccc;
+}
+
 #head {
     background: #002222;
 }
