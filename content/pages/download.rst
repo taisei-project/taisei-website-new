@@ -4,6 +4,7 @@ Download
 :url: download/
 :save_as: download/index.html
 :date: 2021-02-20 12:00
+:template: download
 
 .. |rstsucks| raw:: html
     
