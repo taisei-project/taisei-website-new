@@ -88,5 +88,4 @@ PLUGINS = [
     "pelican_albums",
 ]
 
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
